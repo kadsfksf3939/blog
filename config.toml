@@ -1,0 +1,73 @@
+baseURL = "https://kadsfksf3939.github.io/blog/"
+canonifyURLs = true
+pluralizeListTitles = false
+summaryLength = 25
+
+theme = "BlogRa"
+languageCode = "en-us"
+title = "IIPMR Blog - Supply Chain & Market Research Insights"
+
+[params]
+    description = "Cutting-edge knowledge in supply chain and market research from IIPMR"
+    contactEmail = "contact@iipmr.com"
+    footer = "© 2025 International Institute for Procurement and Market Research"
+    googleAnalytics = ""  # Add GA4 ID if needed
+    math = false
+    mermaid = false
+
+    # Social media links - update with actual IIPMR URLs
+    facebook = "https://www.facebook.com/IIPMR/"
+    twitter = "https://x.com/iipmr_iipmr"
+    youtube = ""
+    linkedin = "https://in.linkedin.com/school/international-institute-for-procurement-and-market-research/"
+    github = ""
+    pinterest = ""
+    instagram = ""
+
+[menu]
+    [[menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
+    [[menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        weight = 2
+        [[menu.main]]
+            parent = "blog"
+            name = "All Posts"
+            url = "/posts/"
+            weight = 1
+        [[menu.main]]
+            parent = "blog"
+            name = "Learning Paths"
+            url = "/sections/"
+            weight = 2
+        [[menu.main]]
+            parent = "blog"
+            name = "divider"
+            weight = 3
+        [[menu.main]]
+            parent = "blog"
+            name = "Topics"
+            url = "/tags/"
+            weight = 4
+    [[menu.main]]
+        name = "About"
+        url = "/about/"
+        weight = 3
+    [[menu.main]]
+        name = "Contact"
+        url = "/contact/"
+        weight = 4
+
+[markup.goldmark.renderer]
+    unsafe = true
+
+[markup.goldmark.parser.attribute]
+    block = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.102.3"

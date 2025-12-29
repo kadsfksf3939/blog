@@ -1,0 +1,25 @@
+# Hugo
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Scraped content (temporary)
+wordpress-scraped/
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
