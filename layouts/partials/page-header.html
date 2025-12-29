@@ -1,6 +1,6 @@
 <header id="header">
   <div class="container-md">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <nav class="navbar navbar-expand-lg navbar-light py-3" >
       <div class="container-fluid">
         <!-- Logo on the left -->
         <a class="navbar-brand d-flex align-items-center" href="{{ "/" | relURL }}">
@@ -39,13 +39,6 @@
             </li>
             {{ end }}
             {{ end }}
-
-            <!-- Social media icons -->
-            <li class="nav-item d-flex align-items-center ms-3">
-              <div class="social-buttons-horizontal">
-                {{ partial "social-media-presence.html" . }}
-              </div>
-            </li>
           </ul>
         </div>
       </div>
@@ -58,34 +51,12 @@
   #header .navbar {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  
   }
 
   #header .navbar-brand img {
     height: 50px;
     width: auto;
-  }
-
-  /* Social media icons inline */
-  .social-buttons-horizontal ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 15px;
-  }
-
-  .social-buttons-horizontal ul li {
-    display: inline-block;
-  }
-
-  .social-buttons-horizontal a {
-    color: #fff;
-    font-size: 18px;
-    transition: opacity 0.3s;
-  }
-
-  .social-buttons-horizontal a:hover {
-    opacity: 0.7;
   }
 
   /* Menu items spacing */

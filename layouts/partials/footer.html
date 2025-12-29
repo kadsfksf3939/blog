@@ -1,0 +1,49 @@
+<footer class="text-center py-5">
+    <!-- Social media icons -->
+    <div class="social-buttons-footer mb-3">
+        {{ partial "social-media-presence.html" . }}
+    </div>
+
+    <p>
+        {{ with .Site.Params.footer }}
+            {{ . }}
+        {{ else }}
+        © {{ now.Year }} <a href="https://rafed.github.io/" target="_blank">Rafed Muhammad Yasir</a>.
+        <a href="https://github.com/rafed/BlogRa/" target="_blank">BlogRa</a> theme for
+        <a href="https://github.com/gohugoio/hugo/" target="_blank">
+            Hugo
+        </a>.
+        {{ end }}
+    </p>
+</footer>
+
+<style>
+  /* Social media icons in footer */
+  .social-buttons-footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .social-buttons-footer ul li {
+    display: inline-block;
+  }
+
+  .social-buttons-footer a {
+    color: #fff;
+    font-size: 24px;
+    transition: opacity 0.3s;
+  }
+
+  .social-buttons-footer a:hover {
+    opacity: 0.7;
+  }
+</style>
+
+{{ with .Site.Params.GoogleSearch }}
+<script async src="https://cse.google.com/cse.js?cx={{ . }}"></script>
+<gcse:searchresults-only></gcse:searchresults-only>
+{{ end }}

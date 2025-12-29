@@ -11,18 +11,16 @@ title = "IIPMR Blog"
     description = "Cutting-edge knowledge in supply chain and market research from IIPMR"
     contactEmail = "contact@iipmr.com"
     footer = "© 2025 International Institute for Procurement and Market Research"
-    googleAnalytics = ""  # Add GA4 ID if needed
+    googleAnalytics = "G-2LR0XVK9KQ"  # Add GA4 ID if needed
     math = false
     mermaid = false
 
     # Social media links - update with actual IIPMR URLs
     facebook = "https://www.facebook.com/IIPMR/"
     twitter = "https://x.com/iipmr_iipmr"
-    youtube = ""
+    youtube = "https://www.youtube.com/iipmr"
     linkedin = "https://in.linkedin.com/school/international-institute-for-procurement-and-market-research/"
-    github = ""
-    pinterest = ""
-    instagram = ""
+    instagram = "https://www.instagram.com/iipmr_certifications/"
 
 [menu]
     [[menu.main]]
@@ -40,18 +38,33 @@ title = "IIPMR Blog"
             weight = 1
         [[menu.main]]
             parent = "blog"
-            name = "Learning Paths"
-            url = "/sections/"
+            name = "Supply Chain"
+            url = "/tags/supply-chain/"
             weight = 2
         [[menu.main]]
             parent = "blog"
-            name = "divider"
+            name = "Procurement"
+            url = "/tags/procurement/"
             weight = 3
+        [[menu.main]]
+            parent = "blog"
+            name = "Logistics"
+            url = "/tags/logistics/"
+            weight = 4
+        [[menu.main]]
+            parent = "blog"
+            name = "Warehousing"
+            url = "/tags/warehousing/"
+            weight = 5
+        [[menu.main]]
+            parent = "blog"
+            name = "divider"
+            weight = 6
         [[menu.main]]
             parent = "blog"
             name = "Topics"
             url = "/tags/"
-            weight = 4
+            weight = 7
     [[menu.main]]
         name = "About"
         url = "/about/"
