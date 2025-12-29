@@ -1,5 +1,5 @@
 ---
-title: "Video aYyMaHiDsqA"
+title: "Is AI a Miracle for Market Research"
 date: "2025-12-29"
 tags: ["video"]
 image: "video-ayymahidsqa-thumbnail.jpg"

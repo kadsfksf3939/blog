@@ -5,7 +5,7 @@ summaryLength = 25
 
 theme = "BlogRa"
 languageCode = "en-us"
-title = "IIPMR Blog - Supply Chain & Market Research Insights"
+title = "IIPMR Blog"
 
 [params]
     description = "Cutting-edge knowledge in supply chain and market research from IIPMR"
