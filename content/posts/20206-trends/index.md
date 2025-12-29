@@ -5,8 +5,8 @@ author: "Sunil Ashwin"
 tags: ["Supply Chain", "Logistics", "Trends", "Technology", "2026"]
 categories: ["Supply Chain", "Industry Insights"]
 summary: "Explore the top supply chain trends shaping 2026—from AI-driven operations to sustainability and resilient networks."
-image: "/images/supply-chain-2026-trends.jpg" # Change to your featured image
-draft: false
+image: "test.jpg" # Change to your featured image
+
 ---
 
 The global supply chain landscape continues to evolve rapidly, driven by technological innovation, shifting consumer expectations, and geopolitical dynamics. As organizations prepare for 2026, understanding the key trends shaping supply chain strategy is essential to stay competitive and resilient.
