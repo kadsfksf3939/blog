@@ -1,0 +1,107 @@
+<header id="header">
+  <div class="container-md">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container-fluid">
+        <!-- Logo on the left -->
+        <a class="navbar-brand d-flex align-items-center" href="{{ "/" | relURL }}">
+          <img src="{{ "images/iipmr-logo.png" | relURL }}" alt="{{ .Site.Title }}" height="50" class="me-3">
+        </a>
+
+        <!-- Mobile toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu items on the right -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                {{ .Name }}
+              </a>
+              <div class="dropdown-menu">
+                {{ range .Children }}
+                {{ if eq .Name "divider" }}
+                  <div class="dropdown-divider"></div>
+                {{ else }}
+                  <a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
+                {{ end }}
+              </div>
+            </li>
+            {{ else }}
+            <li class="nav-item">
+              <a class="nav-link {{ if eq .URL $.RelPermalink }}active{{ end }}" href="{{ .URL }}">
+                {{ .Name }}
+              </a>
+            </li>
+            {{ end }}
+            {{ end }}
+
+            <!-- Social media icons -->
+            <li class="nav-item d-flex align-items-center ms-3">
+              <div class="social-buttons-horizontal">
+                {{ partial "social-media-presence.html" . }}
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<style>
+  /* Make logo navbar single line with proper spacing */
+  #header .navbar {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  #header .navbar-brand img {
+    height: 50px;
+    width: auto;
+  }
+
+  /* Social media icons inline */
+  .social-buttons-horizontal ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+  }
+
+  .social-buttons-horizontal ul li {
+    display: inline-block;
+  }
+
+  .social-buttons-horizontal a {
+    color: #fff;
+    font-size: 18px;
+    transition: opacity 0.3s;
+  }
+
+  .social-buttons-horizontal a:hover {
+    opacity: 0.7;
+  }
+
+  /* Menu items spacing */
+  #header .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 991px) {
+    #header .navbar-brand img {
+      height: 40px;
+    }
+
+    .social-buttons-horizontal {
+      margin-top: 1rem;
+    }
+  }
+</style>
